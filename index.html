@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo"><img src="./box-seam.svg" alt="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Archive</a>
+        </nav>
+    </header>
+
+    <div class="action-box">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-me">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+                
+                <button type="submit" class="login-button">Sign in</button>
+
+                <div class="register">
+                    <p>Don't have an account? <a href="./register.html" class="registration-link" target="_blank">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>

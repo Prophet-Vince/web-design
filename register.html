@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-heading">
+      <h1 id="title">Camp Survey Form</h1>    
+
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <div class="form-box-two">
+      <form id="survey-form">  
+      
+        <div class="group-one">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required/>
+        </div>
+
+        <div class="group-one">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" name="email" type="email" class="form-control" placeholder="Enter your email" required/>
+        </div>
+      
+        <div class="group-one">
+          <label id="number-label" for="number">Age</label>
+          <input id="number" name="age" type="number" min="18" max="50" class="form-control" placeholder="Age" required></div>
+
+        <div class="group-one" id="option-one">
+          <p>Which option best describes your current role?</p>
+          <select name="role" class="form-control" id="dropdown" required>
+              <option>Select current role</option>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+          </select>
+        </div>
+
+        <div class="group-one" id="option-two">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+        
+          <label><input type="radio" class="input-radio" name="recommend" value="definitely" checked />Definitely
+          </label>
+
+          <label><input type="radio" class="input-radio" name="recommend" value="maybe"/>Maybe</label>
+        
+          <label><input type="radio" class="input-radio" name="recommend" value="not-sure"/>Not sure</label>
+
+        </div>
+          <div class="group-one" id="option-three">
+            <p>What would you like to see improved? (Check all that apply)</p>
+
+          <label>
+            <input type="checkbox" value="front-end-project" class="input-checkbox" name="improve" />Front-end Projects
+          </label>
+
+          <label>
+            <input type="checkbox" value="back-end-project" class="input-checkbox" name="improve" />Back-end Projects
+          </label>
+
+          <label>
+            <input type="checkbox" value="data-visualization" class="input-checkbox" name="improve" />Data Visualization
+          </label>
+
+          <label>
+            <input type="checkbox" value="challenges" class="input-checkbox" name="improve" />Challenges
+          </label>
+
+          <label>
+            <input type="checkbox" value="open-source-community" class="input-checkbox" name="improve" />Open Source Community
+          </label>
+
+          <label>
+            <input type="checkbox" value="gitter-helprooms" class="input-checkbox" name="improve" />Gitter help rooms
+          </label>
+
+          <label>
+            <input type="checkbox" value="videos" class="input-checkbox" name="improve" />Videos
+          </label>
+
+          <label>
+            <input type="checkbox" value="city-meetups" class="input-checkbox" name="improve" />City Meetups
+          </label>
+
+          <label>
+            <input type="checkbox" value="wiki" class="input-checkbox" name="improve" />Wiki
+          </label>
+
+          <label>
+            <input type="checkbox" value="forum" class="input-checkbox" name="improve" />Forum
+          </label>
+
+          <label>
+            <input type="checkbox" value="additional-courses" class="input-checkbox" name="improve" />Additional Courses
+          </label>
+        </div>
+
+        <div class="group-one" id="option-four">
+          <p>Any comments and suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comments here"></textarea>
+        </div>
+
+        <div class="group-one">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
